@@ -34,8 +34,14 @@ class ObjectStateTests: XCTestCase {
   }
   
   func test_addLife_GivenAPlayerWithFullLives_ShouldntAddToLives() {
-    player.lives = Player.maximumLives
+    // Start with 0 lives, and keep adding lives until we pass the maximum
+    player.lives = 0
+    for _ in 0..<Player.maximumLives {
+      player.addLife()
+    }
     player.addLife()
+    player.addLife()
+    // Number of lives should not exceed maximum
     XCTAssertEqual(player.lives, Player.maximumLives)
   }
 }

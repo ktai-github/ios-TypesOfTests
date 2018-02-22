@@ -71,10 +71,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2250A82E203E784C00313BFC /* Asyncronous Tests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Asyncronous Tests";
+			sourceTree = "<group>";
+		};
 		22749E8F1FD5F07E009B1F2D /* Testing */ = {
 			isa = PBXGroup;
 			children = (
 				22749E941FD5F07E009B1F2D /* AppDelegate.swift */,
+				2250A82E203E784C00313BFC /* Asyncronous Tests */,
 				22E86A12203D183E00651A02 /* Return Value */,
 				22E86A13203D184D00651A02 /* Object State */,
 				22E86A14203D185600651A02 /* Dependency Injection */,

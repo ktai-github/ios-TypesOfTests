@@ -19,6 +19,8 @@
 		22E86A16203D188F00651A02 /* GameStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E86A15203D188F00651A02 /* GameStateManager.swift */; };
 		22E86A18203D18B900651A02 /* UserDefaultType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E86A17203D18B900651A02 /* UserDefaultType.swift */; };
 		22E86A1A203D1B5F00651A02 /* MockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E86A19203D1B5F00651A02 /* MockTests.swift */; };
+		22E86A51203E6E5000651A02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E86A50203E6E5000651A02 /* ViewController.swift */; };
+		22E86A53203E6EBE00651A02 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E86A52203E6EBE00651A02 /* ViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		22E86A15203D188F00651A02 /* GameStateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStateManager.swift; sourceTree = "<group>"; };
 		22E86A17203D18B900651A02 /* UserDefaultType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultType.swift; sourceTree = "<group>"; };
 		22E86A19203D1B5F00651A02 /* MockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTests.swift; sourceTree = "<group>"; };
+		22E86A50203E6E5000651A02 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		22E86A52203E6EBE00651A02 /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
 		D2A5F2001F4A9144005CD714 /* Testing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Testing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -74,6 +78,7 @@
 				22E86A12203D183E00651A02 /* Return Value */,
 				22E86A13203D184D00651A02 /* Object State */,
 				22E86A14203D185600651A02 /* Dependency Injection */,
+				22E86A4F203E6E4100651A02 /* ViewController */,
 				22749E901FD5F07E009B1F2D /* LaunchScreen.xib */,
 				22749E911FD5F07E009B1F2D /* Assets.xcassets */,
 				22749E921FD5F07E009B1F2D /* Main.storyboard */,
@@ -88,6 +93,7 @@
 				22E86A0A203D114200651A02 /* ReturnValueTests.swift */,
 				22E86A10203D161D00651A02 /* ObjectStateTests.swift */,
 				22E86A19203D1B5F00651A02 /* MockTests.swift */,
+				22E86A52203E6EBE00651A02 /* ViewControllerTests.swift */,
 				22E86A04203D10EF00651A02 /* Info.plist */,
 			);
 			path = TestingTests;
@@ -116,6 +122,14 @@
 				22E86A17203D18B900651A02 /* UserDefaultType.swift */,
 			);
 			path = "Dependency Injection";
+			sourceTree = "<group>";
+		};
+		22E86A4F203E6E4100651A02 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				22E86A50203E6E5000651A02 /* ViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		D2A5F1F71F4A9143005CD714 = {
@@ -244,6 +258,7 @@
 			files = (
 				22E86A11203D161D00651A02 /* ObjectStateTests.swift in Sources */,
 				22E86A0B203D114200651A02 /* ReturnValueTests.swift in Sources */,
+				22E86A53203E6EBE00651A02 /* ViewControllerTests.swift in Sources */,
 				22E86A1A203D1B5F00651A02 /* MockTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22E86A51203E6E5000651A02 /* ViewController.swift in Sources */,
 				22E86A0D203D123F00651A02 /* Canadianizer.swift in Sources */,
 				22E86A18203D18B900651A02 /* UserDefaultType.swift in Sources */,
 				22E86A0F203D152000651A02 /* Player.swift in Sources */,

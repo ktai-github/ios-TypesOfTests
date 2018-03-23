@@ -33,6 +33,18 @@ class ViewControllerTests: XCTestCase {
   }
   
   func test_ShouldBeTheTableViewsDataSource() {
+    let bundleMain = Bundle.main
+    let storyboard = UIStoryboard(name: "Main", bundle: bundleMain)
+    let viewController = storyboard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+    
+    UIApplication.shared.keyWindow?.rootViewController = viewController
+    
+    // Test and Load the View at the Same Time!
+    XCTAssertNotNil(viewController.view)
+    
+    let resutingViewController = viewController.tableView.dataSource as? UIViewController
+    
+    XCTAssertEqual(resutingViewController, viewController)
 
   }
   
@@ -43,7 +55,18 @@ class ViewControllerTests: XCTestCase {
   }
   
   func test_tableViewSections_ShouldEqualOne() {
+    let bundleMain = Bundle.main
+    let storyboard = UIStoryboard(name: "Main", bundle: bundleMain)
+    let viewController = storyboard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
     
+    UIApplication.shared.keyWindow?.rootViewController = viewController
+    
+    // Test and Load the View at the Same Time!
+    XCTAssertNotNil(viewController.view)
+    
+//    let resutingViewController = viewController.tableView.dataSource as? UIViewController
+    XCTAssertEqual(viewController.tableView.numberOfSections, 1) 
   }
+  
   
 }
